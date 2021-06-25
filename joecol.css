@@ -1,0 +1,23 @@
+div
+{
+    background-color: grey;
+}
+
+#personalInfo
+{
+    display: inline-block;
+    background-color: hotpink;
+    margin-left: 20%;
+}
+
+.section
+{
+    margin-bottom: 25px;
+}
+
+#content
+{
+    margin-left: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
