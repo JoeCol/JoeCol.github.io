@@ -1,10 +1,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9/build/citation.js"></script>
+        <script type="application/javascript">
+            const Cite = require('citation-js');
+        </script>
+        <script type="application/javascript" src="bib.js"></script>
         <link rel="stylesheet" type="text/css" href="joecol.css"/>
         <title>Under Construction | Joe Collenette</title>
     </head>
-    <body>
+    <body onload="generateBib()">
         <div id="personalInfo">
             Joe Collenette<br/>
             PICTURE<br/>
@@ -27,7 +32,7 @@
                 Explainability in AI
             </div>
             
-            <div class="section">
+            <div id="publications" class="section">
                 Publications
             </div>
         </div>        
