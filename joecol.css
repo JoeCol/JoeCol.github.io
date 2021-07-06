@@ -1,26 +1,48 @@
-div
+body
 {
-    background-color: grey;
+    font-size: 12pt;
+    color: #303030;
+    background-color: #636363;
 }
 
 #personalInfo
 {
     display: inline-block;
-    background-color: hotpink;
+    background-color: rgb(207, 207, 207);
     margin-left: 20%;
+    padding: 6px;
+    border: 3px #060055 outset;
 }
 
 .section
 {
     margin-bottom: 25px;
+    border: 3px #060055 outset;
+    background-color: lightgray;
+    padding: 6px;
+}
+
+#name
+{
+    font-size: 24pt;
 }
 
 #content
 {
-    margin-left: 7%;
+    margin-left: 3%;
     display: inline-block;
     vertical-align: top;
     width: 50%;
+}
+
+.title
+{
+    font-size: 16pt;
+}
+
+.infosubtitle
+{
+    font-size: 14pt;
 }
 
 .publication
