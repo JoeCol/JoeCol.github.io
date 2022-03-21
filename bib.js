@@ -27,6 +27,7 @@ function printPublications(publist)
     let root = document.getElementById("publications");
     for (let i = 0; i < publist.data.length; i++)
     {
+      
       let pubToProcess = publist.data[i];
       let authors = getAuthors(pubToProcess.author);
       let year = pubToProcess.issued["date-parts"][0].toString()
@@ -34,8 +35,12 @@ function printPublications(publist)
       let place = pubToProcess["container-title"];
       
       let pubDiv = document.createElement("div");
-      pubDiv.className = "publication";
-      pubDiv.innerHTML = title + " (" +  year + ") <i>" + authors + "</i> " + place;
+      pubDiv.className = "w3-container";
+      pubDiv.innerHTML = "<h4 class=\"w3-opacity\"><b>" + title + "</b></h4>" +
+                         "<h5 class=\"w3-opacity\"><b>" + authors + "</b></h5>" +
+                         "<h6 class=\"w3-text-teal\"><i class=\"fa fa-calendar fa-fw w3-margin-right\"></i>" + year + " - " + place + "</span></h6>" +
+                         "<hr>"
+
 
       root.appendChild(pubDiv);
     }

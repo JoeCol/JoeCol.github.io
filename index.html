@@ -1,41 +1,80 @@
 <html>
     <head>
+        <title>Joe Collenette</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/citation-js@0.4.0-9/build/citation.js"></script>
         <script type="application/javascript">
             const Cite = require('citation-js');
         </script>
-        <script type="application/javascript" src="bib.js"></script>
-        <link rel="stylesheet" type="text/css" href="joecol.css"/>
-        <title>Under Construction | Joe Collenette</title>
+        <script src="bib.js"></script> 
+        <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+        </style>
     </head>
-    <body onload="generateBib()">
-        <div id="personalInfo">
-            <span id="name">Joe Collenette</span><br/>
-            Email Address: joe(dot)collenette(at)manchester.ac.uk<br/><br/>
-            <span class="infosubtitle">Current Position</span><br/>
-            Manchester University - Research Associate<br/><br/>
-            <span class="infosubtitle">Topics Include:</span><br/>
-            Multi-agent Systems<br/>
-            AI and Law<br/>
-            AI and Ethics<br/>
-            Explainability in AI<br/>
+    <body onload="generateBib()" class="w3-light-gray">
+        <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+    
+        <!-- Left Column -->
+        <div class="w3-third">
+        
+            <div class="w3-white w3-text-grey w3-card-4">
+                <div class="w3-display-container">
+                    <img src="background.png" style="width:100%" alt="background to name">
+                    <div class="w3-display-bottomleft w3-container w3-text-black">
+                        <h2>Joe Collenette</h2>
+                    </div>
+                </div>
+                <div class="w3-container">
+                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Research Associate</p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Manchester University</p>
+                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>joe(dot)collenette(at)manchester.ac.uk</p>
+                    <hr>
+                    <span class="infosubtitle">Topics Include:</span><br/>
+                    Multi-agent Systems<br/>
+                    AI and Law<br/>
+                    AI and Ethics<br/>
+                    Explainability in AI<br/>
+                    <hr>
+                    I am an early career researcher with a doctorate in computer science, with multiple publications and with a strong background working in industry. 
+                    My research interests include AI, multi-agent systems, AI and law, and robotics. 
+                    I look towards bringing multiple disciplines together with computer science, with an aim of realising developments into real world applications.
+                    <br/><br/>
+                    Currently working with Louise Dennis and Micheal Fisher, I am currently exploring how regulations and ethics can be captured and used to
+                    verify multi/agent systems such as autonomous cars and UAV's. 
+                </div>
+            </div>
         </div>
 
-        <div id="content">
-            <div class="section">
-                <span class="title">Short Biography</span><br/>
-                I am an early career researcher with a doctorate in computer science, with multiple publications and with a strong background working in industry. 
-                My research interests include AI, multi-agent systems, AI and law, and robotics. 
-                I look towards bringing multiple disciplines together with computer science, with an aim of realising developments into real world applications.
-                <br/><br/>
-                Currently working with Louise Dennis and Micheal Fisher, I am currently exploring how regulations and ethics can be captured and used to
-                verify multi/agent systems such as autonomous cars and UAV's. 
+        <!-- Right Column -->
+        <div class="w3-twothird">
+            <div id="publications" class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-star fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications</h2>
             </div>
-            
-            <div id="publications" class="section">
-                <span class="title">Publications</span><br/>
+
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Employment History</h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Research Associate - Manchester University</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                </div>
+                <hr/>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Industrial Strategy Fellow - Liverpool University</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2021</h6>
+                </div>
             </div>
-        </div>        
+        </div>
+    </div>  
+        <footer class="w3-container w3-teal w3-center w3-margin-top">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </footer>
     </body>
 </html>
