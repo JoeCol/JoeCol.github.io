@@ -25,7 +25,7 @@ async function loadFile(filePath) {
 function printPublications(publist)
 {
     let root = document.getElementById("publications");
-    for (let i = 0; i < publist.data.length; i++)
+    for (let i = publist.data.length - 1; i > -1; i--)
     {
       
       let pubToProcess = publist.data[i];
